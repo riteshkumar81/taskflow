@@ -38,7 +38,7 @@ export default function Navbar({ user, onLogout, onToggleMobileSidebar }) {
                   {user.name}
                 </span>
                 <span className="text-[11px] text-slate-500 leading-tight">
-                  {user.role || 'Member'}
+                  {user.email}
                 </span>
               </div>
               <div className="w-8 h-8 rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 text-white font-semibold text-xs flex items-center justify-center shadow-xs">
