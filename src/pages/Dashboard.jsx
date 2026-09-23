@@ -128,9 +128,10 @@ export default function Dashboard({ user, onLogout }) {
 
     setIsModalOpen(false)
     setEditingTask(null)
-  } catch (error) {
-    console.error("Failed to save task:", error)
-  }
+ } catch (error) {
+  console.error("Failed to save task:", error);
+  alert(error.message || "Failed to create task. Please try again.");
+}
 }
 
 const handleDeleteTask = async (task) => {
